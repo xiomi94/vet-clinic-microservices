@@ -1,0 +1,24 @@
+{
+  "name": "@org/contracts",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    "./dto": {
+      "@org/source": "./src/dto/index.ts",
+      "types": "./dist/dto/index.d.ts",
+      "import": "./dist/dto/index.js",
+      "default": "./dist/dto/index.js"
+    },
+    "./tcp-message": {
+      "@org/source": "./src/tcp-message/index.ts",
+      "types": "./dist/tcp-message/index.d.ts",
+      "import": "./dist/tcp-message/index.js",
+      "default": "./dist/tcp-message/index.js"
+    }
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
